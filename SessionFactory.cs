@@ -1,9 +1,8 @@
-﻿// NHibernateHelper.cs
-using FluentNHibernate.Cfg;
+﻿using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Tool.hbm2ddl;
-using NHibernate_Tutorial.Mappings;
+using NHibernateSample.Mapping;
 
 namespace NHibernateSample
 {
@@ -24,7 +23,7 @@ namespace NHibernateSample
                 {
                     _sessionFactory = Fluently.Configure()
                         .Database(PostgreSQLConfiguration.Standard.ConnectionString("Host=localhost;Port=5432;Database=test_api;Username=postgres;Password=1"))
-                        .Mappings(m => m.FluentMappings.AddFromAssemblyOf<EmployeeMapping>())
+                        .Mappings(m => m.FluentMappings.AddFromAssemblyOf<BookMapping>())
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
                 }

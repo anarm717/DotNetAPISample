@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NHibernateSample")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b8791bf7096d61f325b8038d74720676a9770f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("NHibernateSample")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NHibernateSample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
