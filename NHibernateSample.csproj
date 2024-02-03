@@ -11,5 +11,7 @@
     <PackageReference Include="NHibernate" Version="5.5.0"/>
     <PackageReference Include="Npgsql" Version="8.0.1"/>
     <PackageReference Include="FluentNHibernate" Version="3.3.0"/>
+    <PackageReference Include="AutoMapper" Version="12.0.1"/>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1"/>
   </ItemGroup>
 </Project>
