@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using NHibernate;
 using NHibernateSample.Api.Models;
 using NHibernateSample.Application.DTOs;
 using NHibernateSample.Application.Interfaces;
@@ -8,6 +7,7 @@ using NHibernateSample.Business.Exceptions;
 namespace NHibernateSample.Api.Controllers;
 [ApiController]
 [Route("api/books")]
+
 public class BookController : ControllerBase
 {
     private readonly IBookService _bookService;
