@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NHibernateSample.Api.Models;
 using NHibernateSample.Application.DTOs;
@@ -17,7 +18,7 @@ public class BookController : ControllerBase
         _bookService = bookService;
     }
 
-    [HttpGet]
+    [HttpGet,Authorize]
     public IActionResult GetAllBooks()
     {
         var books = _bookService.GetAllBooks();

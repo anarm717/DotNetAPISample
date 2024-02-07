@@ -60,10 +60,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseHttpsRedirection();
 app.MapControllers();
-app.MapGet("/books", (ClaimsPrincipal user) =>
-{
-    app.Logger.LogInformation(user.Identity.Name);
-}).RequireAuthorization();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
