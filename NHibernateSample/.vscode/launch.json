@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Docker .NET Attach (Preview)",
+            "type": "docker",
+            "request": "attach",
+            "platform": "netCore",
+            "sourceFileMap": {
+                "/src": "/Users/anar/Documents/workspace/C#Tutorial/NHibernateSample/NhibernateSample.Api/Program.cs"
+            }
+        },
+        {
+            "name": "C#: <project-name> Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/<relative-path-to-project-folder><project-name>.csproj"
+        },
+        {
+            "name": "Debug with Dapr",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "/Users/anar/Documents/workspace/C#Tutorial/NHibernateSample/NHibernateSample.csproj",
+            "preLaunchTask": "dapr-debug",
+            "postDebugTask": "daprd-down"
+        },
+        {
+            "name": "Debug with Dapr with Dapr",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "/Users/anar/Documents/workspace/C#Tutorial/NHibernateSample/NHibernateSample.csproj",
+            "preLaunchTask": "dapr-debug",
+            "postDebugTask": "daprd-down"
+        }
+    ],
+}

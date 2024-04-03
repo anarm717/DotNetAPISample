@@ -1,0 +1,6 @@
+@NHibernateSample_HostAddress = http://localhost:5052
+
+GET {{NHibernateSample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

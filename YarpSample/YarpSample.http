@@ -1,0 +1,6 @@
+@YarpSample_HostAddress = http://localhost:5001
+
+GET {{YarpSample_HostAddress}}/bookApi/books
+Accept: application/json
+
+###
