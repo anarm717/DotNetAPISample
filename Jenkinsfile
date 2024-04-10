@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'cd NHibernateSample && docker build -t book-api .'
+        script {
+            docker.build('10.0.15.50:5002/book-api', '-f NHibernateSample/Dockerfile .')
+        }
       }
     }
 
