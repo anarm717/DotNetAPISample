@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''cd NHibernateSample \\
-docker build -t book-api .'''
+        sh 'cd NHibernateSample && docker build -t book-api .'
       }
     }
 
