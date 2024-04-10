@@ -3,10 +3,10 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 # Copy the .csproj file and restore dependencies
-COPY *.csproj ./
+COPY NHibernateSample/*.csproj ./
 RUN dotnet restore
 # Copy the remaining source code
-COPY . .
+COPY NHibernateSample .
 
 # Build the application
 RUN dotnet publish -c Release -o out
