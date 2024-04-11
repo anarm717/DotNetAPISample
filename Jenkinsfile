@@ -12,7 +12,7 @@ pipeline {
 
     stage('push image to registry') {
       steps {
-        sh 'docker --insecure-registry 10.0.15.50:5002 push book-api'
+        sh 'docker push 10.0.15.50:5002/book-api'
       }
     }
 
