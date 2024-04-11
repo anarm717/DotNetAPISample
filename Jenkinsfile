@@ -12,7 +12,7 @@ pipeline {
 
     stage('push image to registry') {
       steps {
-        sh 'docker push http://10.0.15.50:5002/book-api'
+        sh 'docker push 10.0.15.50:5002/book-api'
       }
     }
 
